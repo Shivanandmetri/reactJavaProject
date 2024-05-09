@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+
+.head {
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

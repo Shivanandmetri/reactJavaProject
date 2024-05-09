@@ -1,0 +1,126 @@
+/*Class Management  Details clss */
+
+.classContainer {
+    background: rgb(226, 220, 220);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+.detail {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    padding: 12px 20px;
+}
+
+
+
+input:focus {
+    border: 2px solid #555;
+}
+
+.add {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5fdf42;
+    color: #0d0c0c;
+    cursor: pointer;
+}
+
+.del {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ed0a0e;
+    color: #0d0c0c;
+    cursor: pointer;
+}
+
+.mod {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(208, 86%, 36%);
+    color: #0d0c0c;
+    cursor: pointer;
+}
+
+.class_btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.class_btns a{
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+ 
+}
+
+.class_btns a:hover{
+  text-decoration: underline;
+}
+
+
+.sectionContainer{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+
+.btnbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* Subject Management Details */
+
+.sub_container {
+    background-color: rgb(226, 220, 220);
+    height: 555px;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+

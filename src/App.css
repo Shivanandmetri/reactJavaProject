@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+
+/* login and Register css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+  padding: 12px 20px;
+}
+
+
+
+input:focus {
+  border: 2px solid #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 40vw;
+  background-color: rgb(139, 171, 144);
+  border-radius: 15px;
+  gap: 5px;
+}
+
+
+.btn {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: #370bea;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.title {
+  color: rgb(233, 22, 22);
+  font-size: 30px;
+  font-weight: bold;
+  filter: drop-shadow(2px 1px 2px rgb(10, 11, 11));
+}
+
+h3 {
+  font-weight: 500;
+}
+
+
+.error {
+  font-weight: 700;
+  color: red;
+  font-size: small;
+  text-align: center;
+}
+
+.container {
+  background-image: url('./assets/image.jpg');
+  background-attachment: fixed;
+}
+
+
+.home {
+  background-image: url('./assets/schoolmanage.jpg');
+  background-attachment: fixed;
+  height: 555px;
+  background-position: center;
+ background-size:cover ;
+ background-repeat:no-repeat ;
+}

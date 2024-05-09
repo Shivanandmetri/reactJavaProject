@@ -1,0 +1,34 @@
+.maincontainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarstyle {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+}
+
+.midcontainer {
+    flex-grow: 1;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0F1111;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
