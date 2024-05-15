@@ -140,6 +140,8 @@ const ClassComponent = () => {
                 label="name"
                 name="name"
                 id="id"
+                touched={touched}
+                errors={errors}
                 selectedVal={values.name}
                 handleQueryChange={handleQueryChange}
                 handleChange={handleChange}

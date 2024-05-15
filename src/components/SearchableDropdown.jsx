@@ -6,15 +6,17 @@ const SearchableDropdown = ({
   label,
   id,
   name,
+  touched,
   selectedVal,
   handleChange,
   handleQueryChange,
   setFieldValue,
+  errors,
 }) => {
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useRef(null);
-  
+
   useEffect(() => {
     document.addEventListener("click", toggle);
     return () => document.removeEventListener("click", toggle);
@@ -62,6 +64,9 @@ const SearchableDropdown = ({
             }}
             onClick={toggle}
           />
+          {errors.name && touched.name && (
+            <p className="error">{errors.name}</p>
+          )}
         </div>
         {/* <div className={`arrow ${isOpen ? "open" : ""}`}></div> */}
       </div>
