@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import SearchableDropdown from "./SearchableDropdown";
 import SectionSubjects from "./SectionSubjects";
+import { useNavigate } from "react-router-dom";
 
 const classDetails = [
   {
@@ -26,6 +27,7 @@ const ClassComponent = () => {
   const [sections, setSections] = useState([]);
   const [subjects, setSubjects] = useState([]);
   const [query, setQuery] = useState("");
+  const nav = useNavigate();
 
   const handleFieldChange = (fieldName, event, form) => {
     const { value } = event.target;
@@ -85,6 +87,11 @@ const ClassComponent = () => {
     // if (query !== "") {
     //   getClasses();
     // }
+    const user = JSON.parse(localStorage.getItem("user"));
+    const token = user?.accessToken;
+    if (!token) {
+      nav("/");
+    }
     getClasses();
  
   }, [query]);

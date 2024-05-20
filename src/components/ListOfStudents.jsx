@@ -31,7 +31,7 @@ const ListOfStudents = () => {
       <table className="table">
         <thead>
           <tr>
-            <th>ID</th>
+            <th>Sl.No</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Father Name</th>
@@ -40,13 +40,13 @@ const ListOfStudents = () => {
             <th>DOB</th>
             <th>MOB No</th>
             <th>Gender</th>
-            <th>Religion</th>
+            {/* <th>Religion</th>
+            <th>Sats ID</th>
             <th>Caste</th>
             <th>Aadhaar No</th>
             <th>Address</th>
-            <th>Sats ID</th>
             <th>School</th>
-            <th>Section</th>
+            <th>Section</th> */}
           </tr>
         </thead>
         <tbody>
@@ -61,13 +61,13 @@ const ListOfStudents = () => {
               <td>{user.dob}</td>
               <td>{user.contact}</td>
               <td>{user.gender}</td>
-              <td>{user.religion}</td>
+              {/* <td>{user.religion}</td>
+              <td>{user.satsid}</td>
               <td>{user.caste}</td>
               <td>{user.adhaarNo}</td>
               <td>{user.address}</td>
-              <td>{user.satsid}</td>
               <td>{user.school}</td>
-              <td>{user.section}</td>
+              <td>{user.section}</td> */}
             </tr>
           ))}
         </tbody>

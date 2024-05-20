@@ -2,6 +2,44 @@ import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import search from "../../assets/search.png";
 import { useEffect, useState } from "react";
+// import { Menubar } from "primereact/menubar";
+
+// const items = [
+//   {
+//     label: "Academics",
+//     icon: "pi pi-search",
+//     items: [
+//       {
+//         label: "Class Management",
+//         icon: "pi pi-star",
+//         items: [
+//           {
+//             label: "Create New Class",
+//             icon: "pi pi-palette",
+//           },
+//           {
+//             label: "List Of Classes",
+//             icon: "pi pi-palette",
+//           },
+//         ],
+//       },
+//       {
+//         label: "Subject Management",
+//         icon: "pi pi-star",
+//         items: [
+//           {
+//             label: "Create New Subject",
+//             icon: "pi pi-palette",
+//           },
+//           {
+//             label: "List Of Subjects",
+//             icon: "pi pi-palette",
+//           },
+//         ],
+//       },
+//     ],
+//   },
+// ];
 
 const Navbar = () => {
   const [user, setUser] = useState("");
@@ -56,6 +94,9 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+        {/* <div className="card">
+            <Menubar model={items} />
+          </div> */}
 
         <div className="panel">
           <div className="panel-ops">
@@ -63,27 +104,6 @@ const Navbar = () => {
             <p onClick={() => setDrop3(!drop3)}>Student</p>
             <p onClick={() => setDrop(!drop)}>Academics</p>
           </div>
-          {/* <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Student</a>
-            </li>
-            <li>
-              <a href="#">Academics</a>
-              <div className="dropdown_menu">
-                <ul>
-                  <li>
-                    <a href="">Student Management</a>
-                  </li>
-                  <li>
-                    <a href="">Class Management</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul> */}
         </div>
       </header>
 

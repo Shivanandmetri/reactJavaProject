@@ -11,6 +11,8 @@ import ListOfClasses from "./components/ListOfClasses";
 import ListOfSubject from "./components/ListOfSubject";
 import Student from "./components/Student";
 import ListOfStudents from "./components/ListOfStudents";
+// import { PrimeReactProvider } from "primereact/api";
+// import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
 
 const router = createBrowserRouter([
   {
@@ -51,17 +53,23 @@ const router = createBrowserRouter([
       },
       {
         path: "list_student",
-        element: <ListOfStudents/>,
+        element: <ListOfStudents />,
       },
     ],
   },
 ]);
 
+// const value = {
+//   appendTo: "self",
+// };
+
 function App() {
   return (
-    <UserProvider>
-      <RouterProvider router={router} />
-    </UserProvider>
+    // <PrimeReactProvider value={value}>
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
+    // </PrimeReactProvider>
   );
 }
 
